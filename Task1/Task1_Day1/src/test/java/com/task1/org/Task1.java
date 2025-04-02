@@ -23,7 +23,7 @@ public class Task1 {
 		driver.get("https://demo.guru99.com/V4/");
 		driver.manage().window().maximize();
 	}
-	@Test(priority=1,testName="Valid Username and Valid Password",enabled=false)
+	@Test(priority=1,testName="Valid Username and Valid Password")
 	public void TestCase_001()
 	{
 		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys("mngr618432");
@@ -32,7 +32,7 @@ public class Task1 {
 		WebElement ele = driver.findElement(By.linkText("New Customer"));
 		Assert.assertTrue(ele.isDisplayed());
 	}
-	@Test(priority=2,testName="Valid username and InValid Password",enabled=false)
+	@Test(priority=2,testName="Valid username and InValid Password")
 	public void TestCase_002()
 	{
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -53,7 +53,7 @@ public class Task1 {
 		Assert.assertTrue(actUsername.equals(""));
 		Assert.assertTrue(actPassword.equals(""));
 	}
-	@Test(priority=3,testName="InValid Username and Valid Password",enabled=false)
+	@Test(priority=3,testName="InValid Username and Valid Password")
 	public void TestCase_003()
 	{
 		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys("mani123");
@@ -74,7 +74,7 @@ public class Task1 {
 		Assert.assertTrue(actPassword.equals(""));
 		
 	}
-	@Test(priority=4,testName="InValid Username and InValid Password",enabled=false)
+	@Test(priority=4,testName="InValid Username and InValid Password")
 	public void TestCase_004()
 	{
 		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys("mani123");
@@ -94,7 +94,7 @@ public class Task1 {
 		Assert.assertTrue(actUsername.equals(""));
 		Assert.assertTrue(actPassword.equals(""));
 	}
-	@Test(priority=5,testName="Valid Username and Blank Password",enabled=true)
+	@Test(priority=5,testName="Valid Username and Blank Password")
 	public void TestCase_005()
 	{
 		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys("mngr618432");
@@ -104,7 +104,7 @@ public class Task1 {
 		String exp="Password must not be blank";
 		Assert.assertEquals(act, exp);
 	}
-	@Test(priority=6,testName="Blank Username and Valid Password",enabled=false)
+	@Test(priority=6,testName="Blank Username and Valid Password")
 	public void TestCase_006()
 	{
 		driver.findElement(By.xpath("//input[@name='uid']")).sendKeys("");
@@ -127,6 +127,6 @@ public class Task1 {
 	@AfterMethod
 	public void tearDown()
 	{
-	//	driver.close();
+		driver.close();
 	}
 }
