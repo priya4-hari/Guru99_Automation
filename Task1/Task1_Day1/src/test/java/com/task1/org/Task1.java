@@ -19,7 +19,7 @@ public class Task1 {
 	@BeforeMethod
 	public void driverSetup()
 	{
-		driver = new EdgeDriver();
+		driver = new FirefoxDriver();
 		driver.get("https://demo.guru99.com/V4/");
 		driver.manage().window().maximize();
 	}
