@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-04T23:39:21 IST" name="Default suite" finished-at="2025-04-04T23:39:30 IST" duration-ms="9214">
+    <groups>
+    </groups>
+    <test started-at="2025-04-04T23:39:21 IST" name="Default test" finished-at="2025-04-04T23:39:30 IST" duration-ms="9214">
+      <class name="com.Task2.org.Task2">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.Task2.org.Task2@6adbc9d]" started-at="2025-04-04T23:39:21 IST" name="driverSetup" finished-at="2025-04-04T23:39:26 IST" duration-ms="4800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="TC_007()[pri:0, instance:com.Task2.org.Task2@6adbc9d]" started-at="2025-04-04T23:39:26 IST" name="TC_007" finished-at="2025-04-04T23:39:28 IST" duration-ms="1541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Task2.org.Task2@6adbc9d]" started-at="2025-04-04T23:39:28 IST" name="tearDown" finished-at="2025-04-04T23:39:30 IST" duration-ms="2833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Task2.org.Task2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
